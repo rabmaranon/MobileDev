@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                toastMsg("Hello! It's me!");
+                toastMsg("Rachelle Angeli Marañon\nmaranon.r@northeastern.edu");
                 initialImage.setVisibility(View.VISIBLE);
             }
         });
