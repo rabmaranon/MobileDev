@@ -37,6 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button linkCollectorButton = findViewById(R.id.linkCollector);
+        linkCollectorButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Bundle bundle = new Bundle();
+                Intent intent = new Intent(MainActivity.this, LinkCollectorActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 
     public void toastMsg(String msg) {
