@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.spyk">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -11,7 +12,10 @@
         android:roundIcon="@mipmap/spyk_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LinkCollectorActivity"></activity>
+        <activity
+            android:name=".LocatorActivity"
+            android:exported="true" />
+        <activity android:name=".LinkCollectorActivity" />
         <activity
             android:name=".ClickClickActivity"
             android:label="@string/title_activity_click_click" />
