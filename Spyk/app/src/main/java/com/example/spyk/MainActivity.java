@@ -58,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button travelButton = findViewById(R.id.travelButton);
+        travelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TravelActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void toastMsg(String msg) {
